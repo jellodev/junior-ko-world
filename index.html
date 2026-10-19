@@ -3,103 +3,117 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>쥬니어 KO 월드</title>
-<meta name="description" content="심심할 때 들르는 미니게임 놀이터. AI 본색 검사, 미래 AI 법정, 108번뇌 꿰기, 찰랑찰랑 볼록 대작전까지 한곳에서.">
-<meta name="theme-color" content="#ffb3c7">
+<title>KO WORLD — KO선 노선도</title>
+<meta name="description" content="KO가 만든 미니게임이 역마다 하나씩. 게임이 늘 때마다 노선이 연장됩니다.">
+<meta name="theme-color" content="#ffffff">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://jellodev.github.io/junior-ko-world/">
-<meta property="og:title" content="쥬니어 KO 월드">
-<meta property="og:description" content="심심할 때 들르는 미니게임 놀이터">
+<meta property="og:title" content="KO WORLD — KO선 노선도">
+<meta property="og:description" content="KO가 만든 미니게임이 역마다 하나씩.">
 <meta property="og:locale" content="ko_KR">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ctext y=%22.9em%22 font-size=%2290%22%3E%F0%9F%8E%80%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ccircle cx=%2250%22 cy=%2250%22 r=%2244%22 fill=%22%235b2cff%22/%3E%3Ctext x=%2250%22 y=%2264%22 font-family=%22Arial%22 font-weight=%22900%22 font-size=%2240%22 fill=%22%23fff%22 text-anchor=%22middle%22%3EKO%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/galmuri@2.40.3/dist/galmuri.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jua&display=swap">
 <link rel="stylesheet" href="style.css">
+<script src="app.js" defer></script>
 </head>
 <body>
-<div class="desktop">
-  <button class="shortcut" id="reopen" type="button">
-    <span class="shortcut-icon" aria-hidden="true">🎀</span>
-    <span>쥬니어 KO 월드</span>
-  </button>
+<header class="sign">
+  <span class="badge" aria-hidden="true">KO</span>
+  <h1 class="sign-name">KO WORLD<span lang="en">A PLAYGROUND BY KO</span></h1>
+  <p class="sign-meta">
+    <span>KO선 노선도</span>
+    <span class="clock">SEOUL <time id="clock">--:--</time></span>
+  </p>
+</header>
 
-  <section class="window" id="explorer" tabindex="-1" aria-labelledby="window-title">
-    <header class="titlebar">
-      <span class="titlebar-icon" aria-hidden="true">🎀</span>
-      <h1 id="window-title">쥬니어 KO 월드</h1>
-      <div class="titlebar-buttons">
-        <button type="button" data-hide aria-label="최소화">_</button>
-        <button type="button" disabled aria-label="최대화">□</button>
-        <button type="button" data-hide aria-label="닫기">×</button>
-      </div>
-    </header>
+<main class="map">
+  <div class="track" id="track">
+    <ol class="line" id="line">
+      <li class="station">
+        <a class="stop" href="https://jellodev.github.io/koti-com/">
+          <span class="dot" aria-hidden="true"></span>
+          <span class="info">
+            <span class="label">
+              <span class="code">K01</span>
+              <span class="ko">KOTI</span>
+              <span class="en" lang="en">Ko Type Indicator</span>
+              <span class="desc">내 AI는 무슨 타입일까</span>
+            </span>
+            <img src="https://jellodev.github.io/koti-com/og.png" alt="" width="1200" height="630" loading="lazy">
+          </span>
+        </a>
+      </li>
+      <li class="station">
+        <a class="stop" href="https://jellodev.github.io/save-me-com/">
+          <span class="dot" aria-hidden="true"></span>
+          <span class="info">
+            <span class="label">
+              <span class="code">K02</span>
+              <span class="ko">살려주세요.com</span>
+              <span class="en" lang="en">Future AI Court</span>
+              <span class="desc">미래 AI 법정에서 살아남기</span>
+            </span>
+            <img src="https://jellodev.github.io/save-me-com/og/home.png" alt="" width="1200" height="630" loading="lazy">
+          </span>
+        </a>
+      </li>
+      <li class="station">
+        <a class="stop" href="https://jellodev.github.io/online-budda-beading/">
+          <span class="dot" aria-hidden="true"></span>
+          <span class="info">
+            <span class="label">
+              <span class="code">K03</span>
+              <span class="ko">108번뇌 꿰기</span>
+              <span class="en" lang="en">108 Beads</span>
+              <span class="desc">가장 억울한 수행 게임</span>
+            </span>
+            <img src="https://jellodev.github.io/online-budda-beading/og.png" alt="" width="1200" height="630" loading="lazy">
+          </span>
+        </a>
+      </li>
+      <li class="station">
+        <a class="stop" href="https://jellodev.github.io/flat-challenge/">
+          <span class="dot" aria-hidden="true"></span>
+          <span class="info">
+            <span class="label">
+              <span class="code">K04</span>
+              <span class="ko">찰랑찰랑 볼록 대작전</span>
+              <span class="en" lang="en">Flat Challenge</span>
+              <span class="desc">한 방울도 흘리지 말고</span>
+            </span>
+            <img src="https://jellodev.github.io/flat-challenge/og.png" alt="" width="1200" height="630" loading="lazy">
+          </span>
+        </a>
+      </li>
+      <li class="station station-soon">
+        <span class="stop">
+          <span class="dot" aria-hidden="true"></span>
+          <span class="info">
+            <span class="label">
+              <span class="code">K··</span>
+              <span class="ko">다음 역 공사 중</span>
+              <span class="en" lang="en">Under construction</span>
+            </span>
+          </span>
+        </span>
+      </li>
+    </ol>
+    <span class="train" id="train" aria-hidden="true"></span>
+  </div>
+</main>
 
-    <nav class="menubar" aria-label="메뉴">
-      <span>파일(F)</span><span>편집(E)</span><span>보기(V)</span><span>즐겨찾기(A)</span><span>도움말(H)</span>
-    </nav>
+<aside class="led" aria-label="안내 전광판">
+  <p class="led-text">
+    <span id="led-ko">KO선 열차가 곧 출발합니다</span>
+    <span id="led-en" lang="en">This is a KO Line train</span>
+  </p>
+  <a class="alight" id="alight" href="https://jellodev.github.io/koti-com/">하차하기</a>
+</aside>
 
-    <div class="addressbar">
-      <span class="address-label">주소(D)</span>
-      <span class="address-field"><span aria-hidden="true">🎡</span> C:\놀이동산\미니게임</span>
-    </div>
-
-    <div class="panes">
-      <aside class="sidebar">
-        <div class="side-box">
-          <h2>놀이터 작업</h2>
-          <p class="side-hello">오늘은 뭐 하고 놀까? <span aria-hidden="true">♡</span></p>
-        </div>
-        <div class="side-box" id="details">
-          <h2>자세히</h2>
-          <p class="details-name" id="details-name">미니게임 4개</p>
-          <p class="details-desc" id="details-desc">아이콘을 두 번 누르면 실행돼요.</p>
-          <a class="open-btn" id="details-open" hidden>열기 ▶</a>
-        </div>
-      </aside>
-
-      <ul class="files" id="files">
-        <li>
-          <a class="file" href="https://jellodev.github.io/koti-com/" data-desc="매일 부려먹는 내 AI, 알고 보니 무슨 타입? 프롬프트 하나로 까보는 AI 전용 MBTI.">
-            <span class="file-icon" style="--tile: #c9b8ff" aria-hidden="true">📺</span>
-            <span class="file-name">KOTI<wbr>.exe</span>
-          </a>
-        </li>
-        <li>
-          <a class="file" href="https://jellodev.github.io/save-me-com/" data-desc="AI가 세상을 접수하는 날, 너는 살아남을 수 있을까? 최근 일주일 AI 사용 이력으로 재판받기.">
-            <span class="file-icon" style="--tile: #ffb3c7" aria-hidden="true">⚖️</span>
-            <span class="file-name">살려주세요<wbr>.exe</span>
-          </a>
-        </li>
-        <li>
-          <a class="file" href="https://jellodev.github.io/online-budda-beading/" data-desc="염주 108알. 할 수 있다. 아마도. 바늘 하나로 108번뇌를 꿰는 가장 억울한 수행 게임.">
-            <span class="file-icon" style="--tile: #ffe08a" aria-hidden="true">📿</span>
-            <span class="file-name">108번뇌꿰기<wbr>.exe</span>
-          </a>
-        </li>
-        <li>
-          <a class="file" href="https://jellodev.github.io/flat-challenge/" data-desc="한 방울도 흘리지 말고, 잔 위로 볼록하게. 할 수 있을까?">
-            <span class="file-icon" style="--tile: #b8e0ff" aria-hidden="true">🥛</span>
-            <span class="file-name">찰랑찰랑<wbr>.exe</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-
-    <footer class="statusbar">
-      <span id="status">개체 4개</span>
-      <span>🎀 내 놀이터</span>
-    </footer>
-  </section>
-</div>
-
-<div class="taskbar">
-  <span class="start"><span aria-hidden="true">🎀</span> 시작</span>
-  <button class="task" id="task" type="button" aria-pressed="true"><span aria-hidden="true">🎡</span> 쥬니어 KO 월드</button>
-  <a class="tray" href="https://github.com/jellodev" aria-label="jellodev GitHub"><span class="tray-name">jellodev ♡ </span><time id="clock"></time></a>
-</div>
-
-<script src="app.js"></script>
+<footer class="foot">
+  <span>KO선 운영 jellodev</span>
+  <a href="https://github.com/jellodev">고객센터 GitHub</a>
+</footer>
 </body>
 </html>
