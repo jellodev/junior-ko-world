@@ -29,8 +29,10 @@ A single maker's playground of small, odd, AI-era games — not a portal, not a 
 
 ## Brand Commitments
 
-- Name in use: "KO WORLD"; tagline "A PLAYGROUND BY KO". Owner handle: jellodev.
-- Owner wants it to feel made by a professional designer, not AI-generated; explicitly disliked oversized type and a cutesy pink Win98 pastiche.
+- Name in use: "KO WORLD". Owner handle: jellodev.
+- Voice: KO speaks in casual 반말 to the visitor, like a newsletter editor ("안녕, KO야").
+- References the owner chose: Toss (clean spacing, soft gray panels, rounded cards), 까탈로그 and 주말랭이 (personal curation voice, bylines).
+- Rejected directions: pink Win98 explorer, OFFF-style black window, Seoul metro line. All read as "AI-made"; gimmick concepts are out.
 
 ## Evidence on Hand
 
